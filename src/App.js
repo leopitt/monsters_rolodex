@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import CardList from './components/card-list/card-list.component';
-import SeaarchBox from './components/search-box/search-box.comonent';
+import SeaarchBox from './components/search-box/search-box.component';
 import logo from './logo.svg';
 import './App.css';
 
@@ -49,7 +49,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <SeaarchBox onChangeHandler={onSearchChange} placeholder='Search monsters' className='search-box' />
+        <SeaarchBox onChangeHandler={onSearchChange} placeholder='Search monsters' className='monsters-search-box' />
         <CardList monsters={filteredMonsters} />
       </div>
     );
